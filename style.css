@@ -32,11 +32,15 @@ body{
 /* Navigation */
 
 header{
-    background:white;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 12px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:999;
+
+background:rgba(255,255,255,.88);
+
+backdrop-filter:blur(14px);
+
+box-shadow:0 3px 18px rgba(0,0,0,.08);
 }
 
 .navbar{
@@ -78,27 +82,20 @@ nav a:hover{
     color:#D4AF37;
 }
 
-/* Hero */
-
 .hero{
-
     position:relative;
-
     overflow:hidden;
-
     min-height:90vh;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     text-align:center;
 
     background:linear-gradient(#DCEEFF,#FFF8EC);
-
 }
+
+
 
 .hero-content{
 
@@ -155,90 +152,203 @@ background:#6D1F2F;
 transform:translateY(-4px);
 
     }
-.cloud{
-
+..cloud{
 position:absolute;
-
 background:white;
-
 border-radius:100px;
+opacity:.8;
+animation:floatCloud 35s linear infinite;
+}
 
-opacity:.75;
-
+.cloud::before,
+.cloud::after{
+content:"";
+position:absolute;
+background:white;
+border-radius:50%;
 }
 
 .cloud::before{
-
-content:"";
-
-position:absolute;
-
-background:white;
-
-width:70px;
-
-height:70px;
-
-top:-30px;
-
-left:20px;
-
-border-radius:50%;
-
+width:60px;
+height:60px;
+top:-25px;
+left:25px;
 }
 
 .cloud::after{
-
-content:"";
-
-position:absolute;
-
-background:white;
-
-width:80px;
-
-height:80px;
-
-top:-40px;
-
+width:75px;
+height:75px;
+top:-35px;
 right:20px;
-
-border-radius:50%;
-
 }
 
 .cloud1{
-
-width:180px;
-
-height:60px;
-
+width:170px;
+height:55px;
 top:120px;
-
-left:8%;
-
+left:-200px;
+animation-delay:0s;
 }
 
 .cloud2{
-
 width:220px;
-
 height:70px;
-
-top:220px;
-
-right:10%;
-
+top:230px;
+left:-350px;
+animation-delay:10s;
 }
 
 .cloud3{
-
 width:160px;
-
-height:55px;
-
-bottom:100px;
-
-left:25%;
-
+height:50px;
+top:330px;
+left:-500px;
+animation-delay:18s;
 }
+
+@keyframes floatCloud{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(1800px);
+}
+
+   }
+/* ==============================
+   CATEGORY SECTION
+============================== */
+
+.categories{
+    padding:80px 8%;
+    background:#FFF8EC;
+}
+
+.categories h2{
+    text-align:center;
+    font-size:40px;
+    color:#6D1F2F;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#FFFFFF;
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:all .35s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.icon{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#6D1F2F;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.card-btn{
+    display:inline-block;
+    background:#4A90E2;
+    color:white;
+    padding:12px 28px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.card-btn:hover{
+    background:#D4AF37;
+}
+
+/* ==============================
+   ABOUT PREVIEW
+============================== */
+
+.about-preview{
+    background:#DCEEFF;
+    padding:90px 8%;
+    text-align:center;
+}
+
+.about-preview h2{
+    color:#6D1F2F;
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.about-preview p{
+    max-width:800px;
+    margin:auto;
+    color:#555;
+    line-height:1.9;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer{
+    background:#6D1F2F;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.footer-links{
+    margin:25px 0;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+.footer-links a:hover{
+    color:#D4AF37;
+}
+
+.copyright{
+    opacity:.8;
+    margin-top:20px;
+   }
+.hero::before{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+background:radial-gradient(circle,
+rgba(255,236,170,.7) 0%,
+rgba(255,255,255,0) 70%);
+top:-250px;
+left:50%;
+transform:translateX(-50%);
+z-index:0;
+   }
