@@ -129,27 +129,33 @@ nav a:hover{
 
 display:inline-block;
 
-padding:16px 40px;
+padding:16px 42px;
 
-background:#D4AF37;
+background:#4A90E2;
 
 color:white;
 
+border-radius:40px;
+
 text-decoration:none;
 
-border-radius:50px;
+font-weight:600;
 
-font-weight:bold;
+transition:.35s;
 
-transition:.3s;
+box-shadow:0 8px 20px rgba(74,144,226,.35);
 
 }
 
 .shop-btn:hover{
 
-background:#6D1F2F;
+background:#D4AF37;
 
-transform:translateY(-4px);
+transform:translateY(-5px);
+
+box-shadow:0 15px 35px rgba(212,175,55,.35);
+
+}
 
     }
 ..cloud{
