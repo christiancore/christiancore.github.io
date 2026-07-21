@@ -71,8 +71,8 @@ nav a:hover{
 }
 .hero-logo {
     display: block;
-    width: 100%;
-    max-width: 400px;
+    width: 90vw;
+    max-width: 450px;
     height: auto;
     margin: 0 auto 30px auto;
     object-fit: contain;
