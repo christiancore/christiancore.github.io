@@ -380,3 +380,38 @@ z-index:0;
 .whatsapp:hover{
     transform:scale(1.1);
    }
+.featured-products{
+padding:80px 8%;
+background:white;
+text-align:center;
+}
+
+.featured-products h2{
+font-size:40px;
+color:#6D1F2F;
+margin-bottom:15px;
+}
+
+.featured-text{
+color:#666;
+margin-bottom:40px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.product-card{
+background:#FFF8EC;
+padding:30px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.price{
+color:#4A90E2;
+font-weight:bold;
+margin:15px 0;
+}
