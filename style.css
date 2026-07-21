@@ -69,3 +69,9 @@ nav a:hover{
 .btn:hover{
     transform:scale(1.05);
 }
+.hero-logo{
+    width:180px;
+    max-width:90%;
+    height:auto;
+    margin-bottom:25px;
+    }
