@@ -69,21 +69,21 @@ nav a:hover{
 .btn:hover{
     transform:scale(1.05);
 }
-.hero-logo{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    object-fit:cover;
-    margin-bottom:25px;
-    border:4px solid #D4AF37;
-    box-shadow:0 0 25px rgba(212,175,55,0.35);
+
 }
 .mission{
     padding:80px 10%;
     text-align:center;
     background:#111;
 }
-
+.hero-logo {
+    display: block;
+    width: 90vw;
+    max-width: 450px;
+    height: auto;
+    margin: 0 auto 30px auto;
+    object-fit: contain;
+}
 .mission h2{
     color:#D4AF37;
     font-size:36px;
