@@ -14,8 +14,11 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 10%;
+    padding:20px 8%;
     background:#111;
+    position:sticky;
+    top:0;
+}
 }
 
 .logo{
@@ -36,13 +39,14 @@ nav a:hover{
 }
 
 .hero{
-    height:90vh;
+    min-height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:20px;
+    padding:40px 20px;
+};
 }
 
 .hero h1{
@@ -76,13 +80,12 @@ nav a:hover{
     text-align:center;
     background:#111;
 }
-.hero-logo {
-    display: block;
-    width: 90vw;
-    max-width: 450px;
-    height: auto;
-    margin: 0 auto 30px auto;
-    object-fit: contain;
+.hero-logo{
+    display:block;
+    width:100%;
+    max-width:500px;
+    height:auto;
+    margin:20px auto 40px auto;
 }
 .mission h2{
     color:#D4AF37;
