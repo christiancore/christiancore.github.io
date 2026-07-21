@@ -1,93 +1,244 @@
-body{
+/* ==============================
+   CHRISTIANCORE GENESIS V3
+============================== */
+
+*{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:#0b0b0b;
-    color:white;
-    text-align:center;
+    padding:0;
+    box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8FBFF;
+    color:#333;
+}
+
+/* Announcement */
+
+.announcement{
+    background:#6D1F2F;
+    color:white;
+    text-align:center;
+    padding:12px;
+    font-size:14px;
+    font-weight:500;
+}
+
+/* Navigation */
+
 header{
-    padding:30px 20px;
-    background:#1a1a1a;
-    border-bottom:3px solid gold;
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.navbar{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 0;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
 
 .logo{
-    width:180px;
-    max-width:90%;
+    width:70px;
     height:auto;
-    display:block;
-    margin:0 auto 20px;
 }
 
-h1{
-    color:gold;
-    margin:10px 0;
-}
-
-.tagline{
-    color:#8B1E3F;
-    font-size:20px;
-    font-weight:bold;
-}
-
-nav{
-    margin-top:25px;
+.brand h2{
+    color:#6D1F2F;
 }
 
 nav a{
-    color:white;
     text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+    color:#333;
+    margin-left:25px;
+    font-weight:600;
+    transition:.3s;
 }
 
 nav a:hover{
-    color:gold;
+    color:#D4AF37;
 }
+
+/* Hero */
 
 .hero{
-    padding:60px 20px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(#DCEEFF,#FFF8EC);
+
 }
 
-.hero h2{
-    color:gold;
+.hero-content{
+
+    max-width:700px;
+
+    z-index:5;
+
 }
 
-.button{
-    display:inline-block;
-    background:gold;
-    color:black;
-    padding:14px 28px;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:bold;
-    margin-top:20px;
+.hero h1{
+
+    font-size:58px;
+
+    color:#6D1F2F;
+
+    margin-bottom:25px;
+
 }
 
-.button:hover{
-    background:#8B1E3F;
-    color:white;
-}
+.hero p{
 
-.collections{
-    padding:50px 20px;
-}
-
-.card{
-    background:#1f1f1f;
-    border:2px solid #8B1E3F;
-    border-radius:12px;
-    padding:20px;
-    margin:15px auto;
-    max-width:350px;
-    color:white;
     font-size:20px;
+
+    color:#555;
+
+    margin-bottom:40px;
+
 }
 
-footer{
-    margin-top:40px;
-    padding:20px;
-    border-top:2px solid gold;
-    color:#cccccc;
-   }
+.shop-btn{
+
+display:inline-block;
+
+padding:16px 40px;
+
+background:#D4AF37;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.shop-btn:hover{
+
+background:#6D1F2F;
+
+transform:translateY(-4px);
+
+    }
+.cloud{
+
+position:absolute;
+
+background:white;
+
+border-radius:100px;
+
+opacity:.75;
+
+}
+
+.cloud::before{
+
+content:"";
+
+position:absolute;
+
+background:white;
+
+width:70px;
+
+height:70px;
+
+top:-30px;
+
+left:20px;
+
+border-radius:50%;
+
+}
+
+.cloud::after{
+
+content:"";
+
+position:absolute;
+
+background:white;
+
+width:80px;
+
+height:80px;
+
+top:-40px;
+
+right:20px;
+
+border-radius:50%;
+
+}
+
+.cloud1{
+
+width:180px;
+
+height:60px;
+
+top:120px;
+
+left:8%;
+
+}
+
+.cloud2{
+
+width:220px;
+
+height:70px;
+
+top:220px;
+
+right:10%;
+
+}
+
+.cloud3{
+
+width:160px;
+
+height:55px;
+
+bottom:100px;
+
+left:25%;
+
+}
